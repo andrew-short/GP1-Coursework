@@ -33,5 +33,7 @@ public:
 	void update();
 	void setMapStartXY(glm::vec2 startPosXY);
 	glm::vec2 getMapStartXY();
+
+	int gunScore = 1;
 };
 #endif

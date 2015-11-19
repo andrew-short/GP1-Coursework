@@ -143,6 +143,7 @@ void cTileMap::update()
 				tileClickedRC.y = (int)(areaClicked.y - mapStartXY.y) / textureHeight;
 				tileMap[tileClickedRC.y][tileClickedRC.x] = treeToPlant -3;
 				treeToPlant = -1;
+				gunScore++;
 			}
 		}
 	}

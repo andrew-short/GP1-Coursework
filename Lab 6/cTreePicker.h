@@ -33,5 +33,6 @@ public:
 	void update();
 	void setTreeListStartXY(glm::vec2 startPosXY);
 	glm::vec2 getTreeListStartXY();
+
 };
 #endif
