@@ -59,13 +59,13 @@ void cTreePicker::render()
 {
 	treeListStartXY = spritePos2D;
 	glm::vec2 tilePosXY = treeListStartXY;
-	for (int row = 0; row < 4; row++)
+	for (int row = 1; row < 4; row++)
 	{
 		switch (treePickingList[row])
 			{
 			case 1:
-				GLTextureID = treeTextureList[4]->getTexture();
-				break;
+			GLTextureID = treeTextureList[4]->getTexture();
+			break;
 			case 2:
 				GLTextureID = treeTextureList[5]->getTexture();
 				break;

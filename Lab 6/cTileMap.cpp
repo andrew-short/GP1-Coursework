@@ -141,7 +141,7 @@ void cTileMap::update()
 			{
 				tileClickedRC.x = (int)(areaClicked.x - mapStartXY.x) / textureWidth;
 				tileClickedRC.y = (int)(areaClicked.y - mapStartXY.y) / textureHeight;
-				tileMap[tileClickedRC.y][tileClickedRC.x] = treeToPlant;
+				tileMap[tileClickedRC.y][tileClickedRC.x] = treeToPlant -3;
 				treeToPlant = -1;
 			}
 		}

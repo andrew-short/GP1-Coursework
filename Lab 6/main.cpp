@@ -20,8 +20,8 @@ int WINAPI WinMain(HINSTANCE hInstance,
 {
 
     //Set our window settings
-    const int windowWidth = 1024;
-    const int windowHeight = 768;
+    const int windowWidth = 800;
+    const int windowHeight = 600;
     const int windowBPP = 16;
 
 
@@ -64,18 +64,18 @@ int WINAPI WinMain(HINSTANCE hInstance,
 	theInputMgr->clearBuffers(theInputMgr->KEYS_DOWN_BUFFER | theInputMgr->KEYS_PRESSED_BUFFER | theInputMgr->MOUSE_BUFFER);
 
 	int map[8][8] = { { 1, 1, 1, 1, 1, 1, 1, 1 },
-	{ 1, 3, 3, 3, 3, 3, 3, 1 },
-	{ 1, 4, 4, 4, 3, 3, 4, 1 },
-	{ 1, 4, 4, 4, 3, 3, 4, 1 },
-	{ 1, 4, 2, 2, 2, 3, 2, 1 },
-	{ 1, 3, 3, 2, 3, 3, 2, 1 },
-	{ 1, 4, 3, 3, 3, 2, 2, 1 },
-	{ 1, 4, 4, 4, 4, 4, 4, 1 } };
+	{ 1, 1, 1, 1, 1, 1, 1, 1 },
+	{ 1, 1, 1, 2, 3, 4, 5, 6 },
+	{ 7, 8, 1, 1, 1, 1, 1, 1 },
+	{ 1, 1, 1, 1, 1, 1, 1, 1 },
+	{ 1, 1, 1, 1, 1, 1, 1, 1 },
+	{ 1, 1, 1, 1, 1, 1, 1, 1 },
+	{ 1, 1, 1, 1, 1, 1, 1, 1 } };
 
 	// Create vector array of textures
 	vector<cTexture*> textureList;
-	LPCSTR texturesToUse[] = { "Images\\tile1.png", "Images\\tile2.png", "Images\\tile3.png", "Images\\tile4.png", "Images\\tree1.png", "Images\\tree2.png", "Images\\tree3.png", "Images\\tree4.png" };
-	for (int tCount = 0; tCount < 8; tCount++)
+	LPCSTR texturesToUse[] = { "Images\\tile1.png", "Images\\tile5.png", "Images\\tile4.png", "Images\\tile3.png", "Images\\tile2.png", "Images\\tree1.png", "Images\\tree2.png", "Images\\tree3.png", "Images\\tree4.png" };
+	for (int tCount = 0; tCount < 9; tCount++)
 	{
 		textureList.push_back(new cTexture());
 		textureList[tCount]->createTexture(texturesToUse[tCount]);
